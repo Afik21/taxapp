@@ -1,0 +1,13 @@
+export const USER_LOGIN = "/users/login";
+export const USER_LOGOUT = "/users/logout";
+export const GET_USERS = "/users";
+export const GET_USERS_KEY = "/users/key";
+export const CREATE_USER = "/users";
+export const GET_PROPERTYS_TYPE = "/property/types";
+export const CREATE_PROPERTYS_TYPE = "/property/types";
+export const GET_PROPERTYS_KEY = "/propertys/key";
+export const CREATE_PROPERTY = "/propertys";
+export const GET_QRCODES = "/qrcodes";
+export const CREATE_QRCODES = "/qrcodes";
+export const GET_QRCODES_KEY = "/qrcodes/key";
+export const GET_QRCODES_PRINT = "/qrcodes/print";

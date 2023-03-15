@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "comfortaa-light";
+  src: url("../fonts/Comfortaa/static/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: "estonia-regular";
+  src: url("../fonts/Estonia-Regular.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "comfortaa-light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.9em;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wrapper,
+.container-100 {
+  width: 100%;
+}
+
+.height {
+  height: 100%;
+}
+
+.container-90 {
+  width: 90%;
+}
+
+.container-80 {
+  width: 80%;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.layout-head {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-content {
+  height: 90%;
+  padding: 10px 0;
+  display: block;
+}
+
+.table {
+  height: auto;
+  max-height: 90%;
+  position: relative;
+  overflow-y: auto;
+}
+
+/**********************/
+/* .loading-frame{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+
+.ring::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+.loading-frame span{
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+}
+@keyframes text {
+  50%{
+    color: black;
+  }
+} */
+
+/*****************************/
+
+.table table {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+}
+
+.table table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+
+.table table th {
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.table table tr td {
+  padding: 0.5rem 0.65rem;
+  font-size: 0.75rem;
+}
+
+.table table tr td:last-child {
+  width: 17.8%;
+}
+
+.table table tr td ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table table tr td ul li {
+  display: inline-flex;
+  margin: 3px;
+}
+
+.table table tr td ul li button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.table table tr td ul li button:hover {
+  color: lightslategray;
+}
+
+.table .status {
+  border-radius: 5px;
+  padding: 0.3rem 0.75rem;
+  text-align: center;
+}
+
+.status__pending {
+  background-color: #fff0c2;
+  color: #a68b00;
+}
+
+.status__active {
+  background-color: #c8e6c9;
+  color: #388e3c;
+}
+
+.status__inactive {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.table table tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+
+.table-pagination {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  text-align: right;
+}
+
+.table-pagination ul {
+  list-style: none;
+}
+
+.table-pagination ul li {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 5px 8px;
+}
+
+.table-pagination ul li span {
+  margin: 0 7px;
+}
+
+.modal_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.modal_close {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.model__container {
+  padding: 15px 0px;
+}

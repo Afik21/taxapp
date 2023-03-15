@@ -1,0 +1,12 @@
+.prop-search {
+  width: 50%;
+}
+.prop-search form button {
+  padding: 8px;
+  margin: 2px;
+  height: 35px;
+  cursor: pointer;
+}
+.prop-bien-content {
+  height: 90%;
+}

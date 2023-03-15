@@ -1,0 +1,130 @@
+.qr-head button {
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  margin: 0 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+.qr-form-search {
+  width: 50%;
+}
+
+.qr-form-search .input__div {
+  margin-bottom: 0;
+}
+
+.qr-actions button {
+  background-color: var(--third-color);
+  border: none;
+  border-radius: 2px;
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.qr-actions button:hover {
+  background-color: var(--input_color);
+}
+
+.qr-content {
+  padding: 15px 0;
+  flex-wrap: wrap;
+  height: 95%;
+  overflow-y: auto;
+}
+
+.qr-item {
+  width: 24%;
+  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+.qr-item ul {
+  list-style: none;
+}
+.qr-item ul li {
+  font-size: 0.7em;
+  margin-top: 3px;
+}
+.qr-item ul li h3 {
+  color: var(--input_color);
+}
+.qr-item ul li span {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.qr-code {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.form-print form {
+  width: 70%;
+}
+.form-print {
+  margin-bottom: 10px;
+}
+
+.form-print form .input__div {
+  margin-bottom: 0 !important;
+  margin-right: 3px;
+}
+
+.qrcodes-print-container {
+  height: auto;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.qrcodes-print-item {
+  width: 30%;
+  height: 100%;
+  background-color: var(--third-color);
+  border-radius: 14px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.qrcodes-print-item-up {
+  background-color: var(--white-color);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  text-align: center;
+}
+
+.qrcodes-print-item-up img {
+  width: 200px;
+  height: 100px;
+}
+.qrcodes-print-item-up h3 {
+  font-size: 2em;
+}
+.qrcodes-print-item-bottom {
+  height: 150px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.form-cont {
+  position: relative;
+  height: 300px;
+}
+.form-cont form,
+.form-loader {
+  position: absolute;
+  height: 100%;
+}
+.form-loader {
+  background-color: rgba(60, 64, 67, 0.3);
+  z-index: 9999999;
+}

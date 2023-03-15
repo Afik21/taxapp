@@ -1,0 +1,151 @@
+.logins .container-80 {
+  height: calc(100vh - 98px);
+}
+.log__right h2,
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.log__right h2 {
+  font-size: 2rem;
+}
+
+.log__right p {
+  font-size: 1.3rem;
+}
+
+.log__right form {
+  position: relative;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.input__div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input__form {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem;
+  background: none;
+  z-index: 1;
+}
+
+.label__form {
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: var(--input_color);
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.label__icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.6rem;
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: var(--input_color);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.input__form:focus + .label__form {
+  top: -0.8em;
+  left: 0.8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input__form:focus ~ .label__icon {
+  color: var(--first-color);
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input__form:not(:placeholder-shown).input__form:not(:focus) + .label__form {
+  top: -0.8rem;
+  left: 0.8rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input__form:focus {
+  border: 1.5px solid var(--first-color);
+}
+
+.input__more {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem !important;
+  margin-bottom: 10px;
+}
+
+.input__more input {
+  margin-right: 5px;
+}
+.input__div span {
+  font-size: 0.7em;
+  color: red;
+}
+
+.modal-header {
+  padding: 15px 0px;
+}
+.modal-close {
+  font-size: 2rem;
+}
+.modal-close:hover {
+  color: grey;
+}
+
+.login-message {
+  margin-bottom: 17px;
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  border: 1px solid rgba(226, 225, 225, 0.6);
+  animation: fadeIn 3s;
+}
+.lm-succes {
+  background-color: #29de92;
+}
+.lm-failed {
+  background-color: #e33e5a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

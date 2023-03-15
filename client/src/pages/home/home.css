@@ -1,0 +1,233 @@
+.banner {
+  height: 400px;
+  min-height: 400px;
+}
+.banner .container-100 {
+  height: 100%;
+  border-radius: 12px;
+  background-image: url("../../../public/assets/images/car-insurance-for-women.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.banner-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content {
+  position: relative;
+}
+.banner-content p {
+  color: var(--white-color);
+  font-size: 2.5em;
+}
+.banner-text {
+  height: 60px;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+.banner-text h2 {
+  color: var(--white-color);
+  font-size: 4em;
+  letter-spacing: 1px;
+  line-height: 60px;
+}
+.banner-text h2:first-child {
+  animation: animated 20s infinite;
+}
+@keyframes animated {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -60px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.ruban-1,
+.ruban-2 {
+  border: none;
+  border-radius: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.ruban-1 {
+  background-color: var(--main-color);
+}
+.ruban-2 {
+  background-color: #d4af37;
+}
+.ruban-1:hover,
+.ruban-2:hover {
+  background-color: var(--white-color);
+  color: var(--black);
+  font-weight: bold;
+}
+
+.pay-steps {
+  padding: 30px 0px;
+}
+.pay-steps h3 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+.steps-container {
+  margin: 20px 0;
+  padding: 20px 0px;
+}
+.step-item {
+  position: relative;
+  width: 30%;
+  border-radius: 8px;
+  display: block;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  overflow: hidden;
+}
+.step-item span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #22780f;
+  color: var(--white-color);
+  padding: 10px;
+  border-bottom-left-radius: 50%;
+}
+.step-item:first-child {
+  border: 1px solid var(--main-color);
+}
+.step-item:nth-child(2) {
+  border: 1px solid #d4af37;
+}
+.step-item:last-child {
+  border: 1px solid #22780f;
+}
+.step-item p,
+.step-item h3 {
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  text-align: center;
+}
+.step-item h2 {
+  color: #d4af37;
+  font-family: "estonia-regular";
+  font-size: 4em;
+}
+.step-item h3 {
+  color: var(--main-color);
+  font-size: 1.5em;
+}
+
+.partnership {
+  padding: 20px 0px;
+  text-align: center;
+}
+.partnership h3 {
+  font-size: 2rem;
+}
+.partners-container {
+  padding: 20px;
+}
+.partner-item {
+  width: 180px;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+}
+.partner-item img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .banner-content p {
+    font-size: 1em;
+  }
+
+  .banner-text h2 {
+    font-size: 1.3em;
+  }
+  .ruban {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ruban-1,
+  .ruban-2 {
+    padding: 10px;
+    position: relative;
+    font-size: 0.8em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .pay-steps h3 {
+    font-size: 1em;
+  }
+
+  .steps-container {
+    margin: 0;
+    padding: 10px 0px;
+    flex-direction: column;
+  }
+
+  .step-item {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .step-item h2 {
+    font-size: 3em;
+  }
+
+  .step-item h3 {
+    font-size: 1.3em;
+  }
+
+  .step-item p {
+    font-size: 0.8em;
+  }
+
+  .partnership h3 {
+    font-size: 1.2rem;
+  }
+
+  .partner-item {
+    width: 150px;
+    height: 90px;
+  }
+}

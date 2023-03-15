@@ -1,0 +1,296 @@
+.payment .container{
+    width: 60%;
+    padding: 20px;
+}
+.pay-head .logo{
+    width: 190px;
+    height: 140px;
+}
+.disabled{display: none;}
+
+.pay-head ul{list-style: none;}
+.pay-head ul li{margin: 10px; letter-spacing: 1px;}
+.pay-head ul li h3{
+    font-size: 2em;
+}
+.pay-head ul li p{
+    font-size: 1.8em;
+}
+.pay-verify form{
+    flex-wrap: wrap;
+}
+.v-search{margin: 10px 0px;}
+.v-search div{
+    width: 68%;
+}
+.v-search div input,
+.pay-options select,
+.card-pay div input,
+.card-pay textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.v-search div input:focus,
+.pay-options select:focus,
+.card-pay div input:focus,
+.card-pay textarea:focus {
+    border: 1px solid rgb(112, 195, 255);
+    box-shadow: rgba(112, 195, 255, 0.4) 0px 1px 2px 0px, rgba(112, 195, 255, 0.25) 0px 2px 6px 2px;
+}
+
+.v-search div input{
+    margin-bottom: 0px!important;
+}
+.v-search .button{
+    width: 30%!important;
+}
+.message-box{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+}
+.message-box-wrong{
+    background-color: rgba(240, 0, 32, 0.15);
+    border: 1px solid rgba(240, 0, 32, 1);
+}
+.message-box-success{
+    background-color: rgba(73, 182, 117, 0.15);
+    border: 1px solid rgba(73, 182, 117);
+}
+.prop-infos table td{padding: 0 10px 5px 0;}
+.prop-infos table td span{font-weight: bold;}
+
+.pay-options div{
+    width: 49%;
+}
+.pay-mode{width: 100%!important;}
+.pay-mode div{
+    width: 50%!important;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin-top: 8px;
+    text-align: center;
+}
+.pay-mode-selected{
+    background-color: var(--white-color)!important;
+    border-bottom: 2px solid #77b5fe;
+    color: #77b5fe;
+    font-weight: bold;
+}
+
+.card-pay{
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.card-pay div{
+    width: 48%;
+}
+.btn-submit{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pay-process{
+    text-align: center;
+    display: block;
+}
+.pay-process h3{
+    margin: 10px;
+}
+.pay-process .icon{
+    font-size: 2em;
+    margin: 10px;
+}
+.pay-process p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.pay-process ul{
+    list-style: none;
+}
+.pay-process ul li{margin: 8px;}
+
+.pay-success h3,
+.pay-success .icon,
+.pay-success p{
+    color: #38ff9f;
+}
+.pay-failed h3,
+.pay-failed .icon,
+.pay-failed p{
+    color: red;
+}
+
+.pay-historic{
+    flex-wrap: wrap;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+.historic-item{
+    width: 48%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.historic-item ul{list-style: none;}
+.historic-item ul li{
+    margin: 7px;
+    font-size: .9em;
+}
+.consult{
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.consult-success{
+    background-color: #38ff9f;
+}
+.consult-failed{
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .payment .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pay-head .logo {
+        width: 120px;
+        height: 70px;
+    }
+
+    .pay-head ul li h3 {
+        font-size: 1em;
+    }
+
+    .pay-head ul li p {
+        font-size: .9em;
+    }
+
+    .v-search {
+        margin: 10px 0px;
+    }
+
+    .v-search div {
+        width: 80%;
+    }
+
+    .v-search div input,
+    .pay-options select,
+    .card-pay div input,
+    .card-pay textarea {
+        padding: 9px;
+    }
+
+    .v-search div input:placeholder-shown{
+        font-size: .78em;
+    }
+
+    .v-search .button {
+        width: 19% !important;
+    }
+
+    .message-box {
+        font-size: .8em;
+    }
+
+    .prop-infos table td {
+        padding: 0 10px 5px 0;
+        font-size: .8em;
+    }
+
+    .pay-options{
+        flex-direction: column;
+    }
+    .pay-options div {
+        width: 100%;
+    }
+
+    .pay-options div h3 {
+        font-size: 1em;
+    }
+
+    .pay-mode {
+        width: 100%;
+    }
+
+    .pay-mode div {
+       font-size: .9em;
+    }
+
+    .card-pay {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 10px 0;
+    }
+
+    .card-pay div {
+        width: 100%;
+    }
+
+    .card-pay div label{
+        font-size: .9em;
+    }
+
+    .pay-verify form {
+        flex-wrap: wrap;
+    }
+
+    .conf-pay{
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        margin: 0!important;
+    }
+    .conf-pay div{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .conf-pay .button{
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+
+    .pay-process .icon {
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    .pay-process p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .pay-process ul li {
+        margin: 8px;
+    }
+
+    .historic-item ul li {
+        font-size: .7em;
+    }
+
+    .consult {
+        padding: 6px;
+        color: black;
+        font-size: .7em;
+    }
+
+}

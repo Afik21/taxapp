@@ -1,0 +1,84 @@
+.det-content-left {
+  width: 35%;
+}
+.det-content-rigth {
+  width: 64%;
+}
+.det-content-left-actions button {
+  margin: 3px 5px;
+  padding: 5px 10px;
+}
+
+.prop-img {
+  width: 70%;
+  height: 200px;
+  padding: 5px;
+}
+.prop-img img {
+  width: 100%;
+  height: 100%;
+}
+.prop-details table td {
+  padding: 4px;
+}
+.prop-details table td span {
+  font-weight: bold;
+}
+
+.det-content-rigth .btn-property {
+  width: 25%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.property-container {
+  height: auto;
+  max-height: 65%;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+.prop-item {
+  width: 48%;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px #e1e5ee;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+.prop-item-top {
+  padding: 8px;
+}
+.prop-item-top h3 {
+  font-size: 0.9em;
+}
+.prop-item-top span {
+  font-size: 0.8em;
+}
+.prop-item-top ul {
+  list-style: none;
+}
+.prop-item-top ul li {
+  margin: 3px 0px;
+}
+
+.prop-item-bottom {
+  border-top: 1px solid #e1e5ee;
+}
+.prop-item-bottom button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 7px 0px;
+  cursor: pointer;
+}
+.prop-item-bottom button span {
+  margin-left: 10px;
+}
+.prop-item-bottom button:nth-child(even) {
+  background-color: rgba(0, 86, 27, 0.5);
+  color: white;
+}
+.prop-item-bottom button:hover {
+  background-color: white;
+  color: black;
+}

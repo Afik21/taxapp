@@ -1,0 +1,12 @@
+:root {
+    --main-color: #8D0000;
+    --secondary-color: #740000;
+    --third-color: #287bff;
+    --first-color: #1a73e8;
+    --input_color: #80868b;
+    --border-color: #dadce0;
+    --white-color: #fff;
+    --black-color: #000;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.75rem;
+}

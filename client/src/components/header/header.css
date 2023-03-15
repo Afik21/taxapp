@@ -1,0 +1,14 @@
+.header{
+  height: 60px;
+  background-color: var(--white-color);
+}
+.header .container-90{
+  height: 100%;
+}
+.logo{
+  width: 100px;
+  height: 45px;
+}
+@media only screen and (max-width: 768px) {
+  
+}
